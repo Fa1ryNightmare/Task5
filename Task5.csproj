@@ -48,8 +48,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="Inlet.in" />
-    <None Include="Outlet.out" />
+    <EmbeddedResource Include="Inlet.in">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Outlet.out" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
